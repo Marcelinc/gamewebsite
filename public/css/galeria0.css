@@ -1,0 +1,356 @@
+body
+{
+	background-color:#181f1a;
+	color:white;
+	width:65%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+a
+{
+	text-decoration:none;
+	color:white;
+	display:block;
+}
+
+
+
+h3
+{
+	background-color:#59513b;
+	color:#b53c00;
+	padding:5px;
+}
+
+
+header
+{
+	text-align:center;
+	padding:1px 0;
+	background-color:rgba(49,59,52,1);
+	box-sizing:border-box;
+}
+
+nav
+{
+	background-color:rgba(49,59,52,0.6);
+	padding-top:1px;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: center;
+}
+
+nav ul
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+	padding:2px;
+}
+
+nav ul li
+{
+	list-style-type:none;
+	padding:5px;
+	margin:5px;
+	background-color:#121a14;
+	text-align:center;
+}
+
+nav ul li a:hover
+{
+	color:#2a6b3b;
+}
+
+main
+{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: center;
+}
+
+aside
+{
+	width:60px;
+	height:60px;
+	display:none;
+}
+
+img
+{
+	max-width:200px;
+	height:auto;
+}
+
+footer
+{
+	width:100%;
+	background-color:#4d7057;
+	text-align:center;
+	margin-bottom:1px;
+}
+
+#galeria1, #galeria2
+{
+	padding:5%;
+	position:relative;
+	margin-left:2px;
+}
+#galeria1, #galeria2
+{
+	display:block;
+	cursor: zoom-in;
+	transition: all 0.2s ease-in-out;
+}
+
+#galeria1:hover, #galeria2:hover
+{
+	opacity:0.9;
+	cursor:pointer;
+	transform:scale(1.12);
+}
+
+#galeria1 >  p, #galeria2 >  p
+{
+	position:absolute;
+	opacity:0;
+	text-align:center;
+	top:50%;
+	width:100%;
+	left:0;
+	font-size:18px;
+	
+}
+#galeria1:hover > p, #galeria2:hover > p
+{
+	opacity:1;
+	cursor:pointer;
+}
+
+#wt
+{
+	background-color:#aeb82c;
+	width:20%;
+	float:left;
+	margin:2% 7%;
+	height:28%;
+	
+}
+#fb
+{
+	background-color:#1c7e9c;
+	width:20%;
+	float:left;
+	margin:2% 6%;
+	height:28%;
+}
+#yt
+{
+	background-color:#e02704;
+	width:20%;
+	height:2%;
+	float:left;
+	margin:2% 6%;
+}
+
+#wt img
+{
+	width:15px;
+	height:15px;
+	margin-top:1px;
+}
+#wt:hover
+{
+	background-color:#9da71b;
+}
+
+#fb:hover
+{
+	background-color:#0b6d8b;
+}
+#yt:hover
+{
+	background-color:#d01603;
+}
+.gallery
+{
+	transition: all 0.2s ease-in-out;
+}
+.gallery:hover
+{
+	opacity:0.5;
+	cursor:zoom-in;
+	transform:scale(1.12);
+}
+.powrot
+{
+	width:60px;
+	height:60px;
+	text-decoration:none;
+	background-image: url(../img/arrow.png);
+	 background-size: cover;
+	float:left;
+	position:fixed;
+	left:50px;
+	bottom:50px;
+}
+.powrot:hover
+{
+	opacity:0.8;
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 850px)
+{
+	img{
+		max-width:280px;
+	}
+	.galeria
+	{
+		padding:4%;
+	}
+	#fb
+	{
+		height:40px;
+	}
+	#wt
+	{
+		height:40px;
+	}
+	#yt
+	{
+		height:40px;
+	}
+	#wt img
+	{
+		width:25px;
+		height:25px;
+		margin-top:7px;
+	}
+	footer
+	{
+		font-size:20px;
+	}
+	.powrot
+	{
+		width:45px;
+		height:45px;
+	}
+}
+@media screen and (min-width: 851px)
+{
+	img{
+		max-width:330px;
+	}
+	.galeria
+	{
+		padding:4%;
+	}
+	#fb
+	{
+		height:40px;
+	}
+	#wt
+	{
+		height:40px;
+	}
+	#yt
+	{
+		height:40px;
+	}
+	#wt img
+	{
+		width:25px;
+		height:25px;
+		margin-top:7px;
+	}
+	footer
+	{
+		font-size:20px;
+	}
+}
+@media screen and (max-width: 599px)
+{
+	.powrot
+	{
+		width:45px;
+		height:45px;
+		left:20px;
+	}
+	.galeria
+	{
+		margin-top:10px;
+	}
+}
+
+@media screen and (max-width: 1350px)
+{
+	.top-right 
+	{
+		position: absolute;
+		right: 30px;
+		top: 25px;
+				align-items: center;
+                display: flex;
+                justify-content: center;
+	}
+	.links > a {
+		color: white;
+		padding: 0 10px;
+		font-size: 11px;
+		font-weight: 600;
+		letter-spacing: .1rem;
+		text-decoration: none;
+		text-transform: uppercase;
+	}	
+}
+@media screen and (max-width: 1110px)
+{
+	.top-right 
+	{
+		position: absolute;
+		right: 40px;
+        display: block;
+	}
+	.links > a {
+		color: white;
+		padding: 5px 10px;
+		text-align:center;
+	}	
+}
+@media screen and (max-width: 880px)
+{
+	.top-right 
+	{
+		position: absolute;
+		right: 35px;
+	}
+	.links > a {
+		font-size: 10px;
+	}
+}
+@media screen and (max-width: 740px)
+{
+	.top-right{
+		right:20px;
+	}
+}
+@media screen and (max-width: 620px)
+{
+	.top-right{
+		right:10px;
+	}
+	.links > a {
+		font-size: 9px;
+	}
+}
+@media screen and (max-width: 510px)
+{
+	.top-right{
+		right:1px;
+	}
+	.links > a {
+		font-size: 7px;
+	}
+}

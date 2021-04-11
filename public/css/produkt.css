@@ -1,0 +1,383 @@
+article
+{
+	display:flex;
+	flex-wrap:wrap;	
+	padding-bottom:10px;
+	margin:0;
+}
+section
+{
+	margin:5px;
+	justify-content:center;
+	width:45%;
+}
+h4
+{
+	border-bottom: 2px dashed #c94a18;	
+}
+h2
+{
+	text-align:center;
+}
+main
+{
+	padding:0.5px;
+	margin-top:5px;
+	background-color:#b0a696;
+	padding-bottom:20px;
+}
+body
+{
+	background-color:#181f1a;
+	color:white;
+	width:60%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+a
+{
+	text-decoration:none;
+	color:white;
+	display:block;
+}
+
+#images
+{
+	justify-content:center;
+	display:flex;
+	flex-wrap:wrap;
+	margin-top:15%;
+}
+
+h3
+{
+	background-color:#59513b;
+	color:#b53c00;
+	padding:5px;
+	font-size:16px;
+}
+h1
+{
+		padding:1px;
+}
+#opis
+{
+	margin-left:0px;
+}
+header
+{
+	text-align:center;
+	background-color:rgba(49,59,52,1);
+	
+}
+figure
+{
+	padding-top:1px;
+	margin:0;
+}
+#details div
+{
+	text-align:center;
+}
+#akcja
+{
+	border-top: 2px dashed #c94a18;
+	margin:15px 0;
+}
+main img
+{
+	max-width:80px;
+	height:auto;
+}
+
+
+main img:hover
+{
+	opacity:0.9;
+	cursor:zoom-in;
+}
+
+footer
+{
+	width:100%;
+	background-color:#4d7057;
+	text-align:center;
+	margin-top:10px;
+}
+input, button
+{
+	margin-top:5px;
+	padding:3px;
+}
+#wt
+{
+	background-color:#aeb82c;
+	width:20%;
+	float:left;
+	margin:2% 7%;
+	height:28%;
+}
+#fb
+{
+	background-color:#1c7e9c;
+	width:20%;
+	float:left;
+	margin:2% 6%;
+	height:28%;
+}
+#yt
+{
+	background-color:#e02704;
+	width:20%;
+	height:2%;
+	float:left;
+	margin:2% 6%;
+}
+
+#wt img
+{
+	width:15px;
+	height:15px;
+	margin-top:1px;
+}
+#wt:hover
+{
+	background-color:#9da71b;
+}
+
+#fb:hover
+{
+	background-color:#0b6d8b;
+}
+#yt:hover
+{
+	background-color:#d01603;
+}
+#slideshow img
+	{width:100%;height:79px;}
+
+#slideshow 
+	{position:relative;height:79px;}
+	
+#slideshow img 
+	{position:absolute;top:0;left:0;z-index:8;}
+	
+#slideshow img.active 
+	{z-index:10;}
+
+#slideshow img.last-active 
+	{z-index:9;}
+	
+.powrot
+{
+	width:60px;
+	height:60px;
+	text-decoration:none;
+	background-image: url(../img/arrow.png);
+	 background-size: cover;
+	float:left;
+	position:fixed;
+	left:50px;
+	top:50px;
+}
+.powrot:hover
+{
+	opacity:0.8;
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 850px)
+{
+	main img{
+		max-width:160px;
+	}
+	
+	#fb
+	{
+		height:40px;
+	}
+	#wt
+	{
+		height:40px;
+	}
+	#yt
+	{
+		height:40px;
+	}
+	#wt img
+	{
+		width:25px;
+		height:25px;
+		margin-top:7px;
+	}
+	footer
+	{
+		font-size:20px;
+	}
+	#slideshow img
+	{width:100%;height:120px;}
+
+	#slideshow 
+	{position:relative;height:120px;}
+	h3{font-size:19px;}
+	.powrot
+	{
+		width:45px;
+		height:45px;
+	}
+	section
+	{width:44%;}
+	input[type=number]
+	{width:40%;}
+	#images
+	{
+		position:relative;
+		top:20%;
+	}
+}
+@media screen and (min-width: 851px)
+{
+	main img{
+		max-width:230px;
+	}
+	a{
+		max-width:230px;
+	}
+	#fb
+	{
+		height:40px;
+	}
+	#wt
+	{
+		height:40px;
+	}
+	#yt
+	{
+		height:40px;
+	}
+	#wt img
+	{
+		width:25px;
+		height:25px;
+		margin-top:7px;
+	}
+	footer
+	{
+		font-size:20px;
+	}
+	#slideshow img
+	{width:100%;height:200px;}
+
+	#slideshow 
+	{position:relative;height:200px;}
+	h3
+	{
+		padding:7px;
+		font-size:22px;
+	}
+	section
+	{width:44%;}
+	input[type=number]
+	{width:50%;}
+	
+}
+@media screen and (max-width: 599px)
+{
+	header h1
+	{
+		font-size:80%;
+	}
+	.powrot
+	{
+		width:35px;
+		height:35px;
+		left:10px;
+	}
+	h2
+	{
+		font-size:12px;
+	}
+	h4
+	{
+		font-size:11px;
+	}
+	section
+	{
+		width:90%;
+	}
+	article
+	{
+		flex-direction: column;
+		left:10%;
+	}
+	
+}
+@media screen and (min-width: 420px) and (max-width: 599px)
+{
+	main img{
+		max-width:110px;
+	}
+	input
+	{
+		margin-left:42%;
+	}
+	#akcja
+	{
+		text-align:center;
+	}
+	#details div input
+	{margin-right:50%;}
+}
+@media screen and (max-width: 420px)
+{
+	article
+	{
+		justify-content:center;
+	}
+	label
+	{font-size:11px;}
+	li
+	{
+		font-size:14px;
+	}
+	#akcja
+	{
+		text-align:center;
+	}
+	ul
+	{
+		padding-left:7px;
+	}
+}
+@media screen and (max-width: 164px)
+{
+	section:nth-of-type(2)
+	{
+		position:relative;
+		overflow:auto;
+	}
+	main img{
+		max-width:50px;
+	}
+	#details
+	{
+		font-size:11px;
+	}
+}
+@media screen and (max-width: 200px)
+{
+	li
+	{
+		font-size:10px;
+	}
+	#details
+	{
+		font-size:12px;
+	}
+	ul
+	{
+		padding-left:7px;
+	}
+	
+}
